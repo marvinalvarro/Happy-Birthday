@@ -1,0 +1,28 @@
+<!-- ======================================================
+     SCENE 1 — QR LANDING (the "cover" of the experience)
+     HOW TO RE-ENABLE:
+     1. Paste this whole block into index.html, right before
+        the "SCENE 2 — INTRO" section.
+     2. In script.js, change #scene-intro back to have the
+        "hidden" class in index.html, i.e.
+          <section id="scene-intro" class="scene hidden">
+     3. In script.js DOMContentLoaded handler, replace
+          startIntro();
+        with
+          initQRScene();
+        (initQRScene() already exists in script.js and calls
+        startIntro() itself once the QR is tapped/scanned)
+====================================================== -->
+<section id="scene-qr" class="scene">
+  <div class="qr-wrap" data-aos="fade">
+    <div class="qr-frame">
+      <div id="qr-love" class="qr-love"></div>
+      <div class="qr-corner tl"></div>
+      <div class="qr-corner tr"></div>
+      <div class="qr-corner bl"></div>
+      <div class="qr-corner br"></div>
+    </div>
+    <p class="qr-caption">Scan Me <span class="heart-pulse">❤</span></p>
+    <p class="qr-sub">or tap to continue</p>
+  </div>
+</section>
